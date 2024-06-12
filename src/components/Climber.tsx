@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react'
-import './Climber.css'
 
 import backgroundCity from '../assets/city-skyline.png'
 import climber1 from '../assets/climber01.webp'
@@ -28,6 +27,7 @@ const Climber = () => {
   const climberMove = (move: string) => {
     setShowClimber1((prev) => !prev)
     setShowClimber2((prev) => !prev)
+
     switch (move) {
       case 'ArrowUp':
         setTopPosition((prev) =>
@@ -94,7 +94,7 @@ const Climber = () => {
   }, [buildingPosition])
 
   return (
-    <div className=" z-20 relative w-full h-full bg-gradient-to-tl from-sky-500 to-orange-400 ">
+    <div className=" z-20 relative w-full h-full  bg-gradient-to-tl from-sky-500 to-orange-400 ">
       <StatusBar health={health} position={buildingPosition} />
       <div className=" -z-10 absolute top-0 w-full h-full bg-gradient-to-t from-gray-600/80 to-gray-400/0 object-bottom">
         <img
