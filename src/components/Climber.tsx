@@ -94,7 +94,7 @@ const Climber = () => {
   }, [buildingPosition])
 
   return (
-    <div className=" z-20 relative w-full h-full  bg-gradient-to-tl from-sky-500 to-orange-400 ">
+    <div className=" hidden md:flex z-20 relative w-full h-full  bg-gradient-to-tl from-sky-500 to-orange-400 ">
       <StatusBar health={health} position={buildingPosition} />
       <div className=" -z-10 absolute top-0 w-full h-full bg-gradient-to-t from-gray-600/80 to-gray-400/0 object-bottom">
         <img
