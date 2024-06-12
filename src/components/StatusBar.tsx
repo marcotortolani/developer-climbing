@@ -19,8 +19,20 @@ export default function StatusBar({
         Altura: {Math.floor(position / 42.8)} metros / 125 metros
       </span>
       <span className=" text-gray-400 font-medium text-lg">
-        Level: {Math.floor(position / 1783.33)}
+        Level: {Math.floor(position / 1783.33)} / {position}
       </span>
+      <p className=" absolute bottom-3 right-4 text-sm font-light text-lime-600">
+        Developed by{' '}
+        <a
+          className=" font-medium text-lime-400"
+          href="https://www.linkedin.com/in/marco-tortolani"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Marco Tortolani
+        </a>{' '}
+        - 2024
+      </p>
     </div>
   )
 }
