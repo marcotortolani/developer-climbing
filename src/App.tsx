@@ -6,7 +6,7 @@ import { LinkedinIcon } from 'lucide-react'
 function App() {
   const [isPlaying, setIsPlaying] = useState(false)
   return (
-    <main className="relative z-0 w-screen h-screen">
+    <main className="relative z-0 w-screen h-screen ">
       <div
         className={`${
           isPlaying ? ' scale-0 ' : ' scale-100 '
@@ -35,7 +35,7 @@ function App() {
         </p>
         <a
           className=" flex items-center justify-center gap-2 w-10 h-10 rounded-xl hover:scale-110 hover:border hover:border-white transition-all duration-200 ease-in-out"
-          href="https://linkedin.com/in/marco-tortolani"
+          href="https://www.linkedin.com/posts/marco-tortolani_front-react-web-activity-7206633715622424576-NJaR?utm_source=share&utm_medium=member_desktop"
           target="_blank"
           rel="noopener noreferrer"
         >
